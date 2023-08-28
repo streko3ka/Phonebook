@@ -6,4 +6,8 @@ public class PhoneBook {
     public void add(String name, String number) {
         contacts.put(name, number);
     }
+
+    public String findByNumber(String number) {
+        return null;
+    }
 }

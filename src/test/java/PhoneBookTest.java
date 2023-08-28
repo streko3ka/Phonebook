@@ -12,7 +12,15 @@ public class PhoneBookTest {
     public void testAdd1() {
         PhoneBook phoneBook = new PhoneBook();
         phoneBook.add("Mary", "9123456789");
-        String number = phoneBook.contacts.get("Mary");
-        Assertions.assertEquals("9123456789", number);
+        String contactName = phoneBook.findByNumber("9123456789");
+        Assertions.assertEquals("Mary", contactName);
+    }
+
+    @Test
+    public void testFindByNumber() {
+        PhoneBook phoneBook = new PhoneBook();
+        phoneBook.add("Mary", "9123456789");
+        String contactName = phoneBook.findByNumber("9123456789");
+        Assertions.assertEquals("Mary",contactName);
     }
 }
