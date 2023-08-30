@@ -29,7 +29,7 @@ public class PhoneBookTest {
         PhoneBook phoneBook = new PhoneBook();
         phoneBook.add("Mary", "9123456789");
         phoneBook.add("Alex", "9213456789");
-        String contactNumber = phoneBook.findByNumber("Mary");
-        Assertions.assertEquals("Mary", contactNumber);
+        String contactNumber = phoneBook.findByName("Mary");
+        Assertions.assertEquals("9123456789", contactNumber);
     }
 }
