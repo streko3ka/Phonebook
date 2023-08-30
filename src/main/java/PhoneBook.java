@@ -8,8 +8,8 @@ public class PhoneBook {
     }
 
     public String findByNumber(String number) {
-        for (String key : contacts.keySet()){
-            if (contacts.get(key).equals(number)){
+        for (String key : contacts.keySet()) {
+            if (contacts.get(key).equals(number)) {
                 return key;
             }
         }
@@ -22,5 +22,9 @@ public class PhoneBook {
         } else {
             return "No such contact";
         }
+    }
+
+    public String printAllNames() {
+        return null;
     }
 }

@@ -32,4 +32,13 @@ public class PhoneBookTest {
         String contactNumber = phoneBook.findByName("Mary");
         Assertions.assertEquals("9123456789", contactNumber);
     }
+
+    @Test
+    public void testPrintAllNames() {
+        PhoneBook phoneBook = new PhoneBook();
+        phoneBook.add("Mary", "9123456789");
+        phoneBook.add("Alex", "9213456789");
+        String allContacts = phoneBook.printAllNames();
+        Assertions.assertEquals("Mary Alex", allContacts);
+    }
 }
