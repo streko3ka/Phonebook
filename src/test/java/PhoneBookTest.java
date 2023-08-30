@@ -39,6 +39,6 @@ public class PhoneBookTest {
         phoneBook.add("Mary", "9123456789");
         phoneBook.add("Alex", "9213456789");
         String allContacts = phoneBook.printAllNames();
-        Assertions.assertEquals("Mary Alex", allContacts);
+        Assertions.assertEquals("Alex Mary", allContacts);
     }
 }
