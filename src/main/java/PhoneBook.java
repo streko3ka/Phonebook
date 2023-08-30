@@ -15,4 +15,8 @@ public class PhoneBook {
         }
         return "No such contact";
     }
+
+    public String findByName(String name) {
+        return null;
+    }
 }

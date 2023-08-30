@@ -21,6 +21,15 @@ public class PhoneBookTest {
         PhoneBook phoneBook = new PhoneBook();
         phoneBook.add("Mary", "9123456789");
         String contactName = phoneBook.findByNumber("9123456789");
-        Assertions.assertEquals("Mary",contactName);
+        Assertions.assertEquals("Mary", contactName);
+    }
+
+    @Test
+    public void testFindByName() {
+        PhoneBook phoneBook = new PhoneBook();
+        phoneBook.add("Mary", "9123456789");
+        phoneBook.add("Alex", "9213456789");
+        String contactNumber = phoneBook.findByNumber("Mary");
+        Assertions.assertEquals("Mary", contactNumber);
     }
 }
